@@ -20,8 +20,8 @@ const sizeStyles = {
     "lg": "p-6"
 }
 
-const defaultStyles = "rounded-md flex"
+const defaultStyles = "rounded-md flex items-center"
 
 export const Button = (props: ButtonProps) => {
-    return <button className={`${varientStyles[props.varient]} ${defaultStyles} ${sizeStyles[props.size]}`}>{props.startIcon} {props.text} {props.endIcon}</button>
+    return <button className={`${varientStyles[props.varient]} ${defaultStyles} ${sizeStyles[props.size]}`}><div className="pr-2">{props.startIcon}</div> {props.text} {props.endIcon}</button>
 }
